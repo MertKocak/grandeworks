@@ -1,4 +1,3 @@
-import React from 'react'
 import "./RightPanel.css"
 import { IoClose } from "react-icons/io5";
 import TestCard from './TestCard/TestCard';

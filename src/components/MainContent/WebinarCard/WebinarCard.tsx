@@ -1,4 +1,3 @@
-import React from 'react'
 import "./WebinarCard.css"
 
 const WebinarCard = () => {

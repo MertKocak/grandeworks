@@ -1,4 +1,3 @@
-import React from 'react'
 import "./CourseProgress.css"
 
 import 'react-circular-progressbar/dist/styles.css';

@@ -1,4 +1,3 @@
-import React from 'react'
 import { HiDotsHorizontal } from "react-icons/hi";
 import "./EarningReport.css"
 import StatusCard from './StatusCard/StatusCard';

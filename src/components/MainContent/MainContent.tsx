@@ -1,4 +1,3 @@
-import React from 'react'
 import './MainContent.css';
 
 import Header from './Header/Header';
