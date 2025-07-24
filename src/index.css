@@ -12,6 +12,8 @@
   --color-blue: #04bacc;
   --color-darkblue: #3a61ee;
 
+  min-height: 100%;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(to bottom right,
