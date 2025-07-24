@@ -1,0 +1,73 @@
+.balance-cards {
+    display: flex;
+    margin-bottom: 24px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.balance-card {
+    flex: 1 1 calc(33.33% - 16px);
+    box-sizing: border-box;
+    flex: 1;
+    border: 1px solid;
+    border-radius: 32px;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #e1ecfd;
+    display: flex;
+    align-items: start;
+}
+
+.balance-card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.balance-card-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    height: auto;
+}
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.value {
+    font-weight: 800;
+    font-size: 18px;
+    margin: 0;
+    margin-left: 8px;
+    color: var(--color-black);
+}
+
+.title {
+    font-weight: 800;
+    font-size: 12px;
+    color: var(--color-black);
+    margin: 0;
+}
+
+.rate {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0;
+}
+
+@media (max-width: 1280px) {
+    .balance-card {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+@media (max-width: 768px) {
+    .balance-card {
+        flex: 1 1 100%;
+    }
+
+}

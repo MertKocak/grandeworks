@@ -1,0 +1,54 @@
+.status {
+    display: flex;
+    align-items: start;
+    padding: 12px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 200px;
+    flex-direction: column;
+}
+
+.status-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+}
+
+.status-label {
+    font-size: 12px;
+    color: #9da2a8;
+    margin: 0;
+    margin-left: 8px;
+    font-weight: 700;
+}
+
+.status-value {
+    font-weight: 900;
+    font-size: 16px;
+    margin: 4px 0;
+    color: var(--color-black);
+}
+
+.progress {
+    width: 100%;
+    display: flex;
+    height: 5px;
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    /* taşmaları engelle */
+}
+
+.progress-section {
+    width: 100%;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 3px;
+}

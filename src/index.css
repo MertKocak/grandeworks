@@ -1,0 +1,30 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-family: 'Manrope', sans-serif;
+  --color-black: #1b1c1e;
+  --color-text-gray: #8a929b;
+  --color-border-gray: #adb8cd;
+  --color-purple: #7367ef;
+  --color-orange: #fd9f40;
+  --color-red: #ff4c56;
+  --color-blue: #04bacc;
+  --color-darkblue: #3a61ee;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: linear-gradient(to bottom right,
+      #e4f4fa,
+      /* Açık Mavi */
+      #c7ddf0,
+      /* Koyu Mavi */
+      #c6bceb
+      /* Açık Mor */
+    );
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

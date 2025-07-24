@@ -1,0 +1,96 @@
+.contact-card {
+    border-radius: 100px;
+    padding: 12px;
+    border: 1px solid var(--color-border-gray);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 46px;
+    height: 46px;
+    background: #f6f8fd;
+    border-radius: 50%;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    height: fit-content;
+    justify-content: center;
+}
+
+.contact-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+}
+
+.contact-name {
+    font-weight: 700;
+    color: var(--color-black);
+    font-size: 14px;
+    margin: 0;
+}
+
+.contact-email {
+    font-size: 12px;
+    color: var(--color-text-gray);
+    margin: 0;
+    font-weight: 600;
+}
+
+.level-badge {
+    background: #ef4f25;
+    color: white;
+    padding: 2px 8px;
+    font-size: 10px;
+    border-radius: 100px;
+    font-weight: 800;
+    margin: 0;
+    height: fit-content;
+    margin-top: 1px;
+    margin-left: 8px;
+    padding-top: 3px;
+}
+
+.add-button {
+    background: #f6f8fd;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--color-text-gray);
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .level-badge {
+        width: fit-content;
+        margin-left: 0px;
+    }
+
+    .contact-email {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+}

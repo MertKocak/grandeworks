@@ -1,0 +1,76 @@
+.panel-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.panel-header-title {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: -6px;
+    height: fit-content;
+}
+
+.panel-header-title h1 {
+    margin: 0;
+    margin-right: 80px;
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--color-black);
+}
+
+.panel-header-title p {
+    margin: 0;
+    color: var(--color-text-gray);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -4px;
+}
+
+.panel-header-icon {
+    color: var(--color-black);
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.connect-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.connect-section h4 {
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.connect-section a {
+    color: var(--color-text-gray);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .right-panel {
+        width: 100%;
+        border-left: 1px solid var(--color-border-gray);
+    }
+}
+
+@media (max-width: 768px) {
+    .right-panel {
+        border-left: none;
+    }
+
+}

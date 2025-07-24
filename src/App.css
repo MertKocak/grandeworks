@@ -1,0 +1,50 @@
+:root {
+  padding: 42px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 26px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-wrapper {
+  flex: 5;
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+  margin-left: 264px;
+}
+
+.right-panel {
+  flex: 2;
+  width: var(--right-width);
+  padding: 16px;
+}
+
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex: 2;
+    flex-direction: column;
+  }
+
+  .right-panel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    margin: 0;
+  }
+
+  .right-panel {
+    width: 100%;
+  }
+}
