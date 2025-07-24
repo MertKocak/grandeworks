@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Sidebar.css';
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -10,6 +10,15 @@ const Sidebar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [isPopularOpen, setIsPopularOpen] = useState(false);
     const [selectedSubItem, setSelectedSubItem] = useState<string | null>(null);
+
+    // seçilen linki kaydetme
+    useEffect(() => {
+        const savedItem = localStorage.getItem("selectedSubItem");
+        if (savedItem === "Top Rated") {
+            setSelectedSubItem("Top Rated");
+            setIsPopularOpen(true);
+        }
+    }, []);
 
     return (
         <>
@@ -24,7 +33,6 @@ const Sidebar = () => {
                     <nav className="menu">
                         <a href="/">Home</a>
                         <a href="/">All Courses</a>
-
                         <div className="dropdown">
                             <button
                                 className={`dropdown-toggle ${isPopularOpen ? 'active' : ''}`}
@@ -32,33 +40,36 @@ const Sidebar = () => {
                             >
                                 Popular Courses <span className="arrow">{isPopularOpen ? <IoIosArrowDown /> : <IoIosArrowForward />}</span>
                             </button>
-
                             {isPopularOpen && (
                                 <div className="dropdown-menu">
                                     <a
                                         href="/"
                                         className={selectedSubItem === 'Top Rated' ? 'selected' : ''}
-                                        onClick={() => setSelectedSubItem('Top Rated')}
+                                        onClick={() => {
+                                            setSelectedSubItem('Top Rated');
+                                            localStorage.setItem("selectedSubItem", "Top Rated");
+                                        }}
                                     >
                                         Top Rated
                                     </a>
                                     <a
                                         href="/"
                                         className={selectedSubItem === 'Most Viewed' ? 'selected' : ''}
-                                        onClick={() => setSelectedSubItem('Most Viewed')}
+                                        onClick={() => {
+                                            setSelectedSubItem('Most Viewed');
+                                            localStorage.removeItem("selectedSubItem");
+                                        }}
                                     >
                                         Most Viewed
                                     </a>
                                 </div>
                             )}
                         </div>
-
                         <a href="/">Schedule</a>
                         <a href="/">My Courses</a>
                         <a href="/">Statistics</a>
                     </nav>
                 </div>
-
                 <div className="user-section">
                     <UserInfo
                         name="Volter Anderson"

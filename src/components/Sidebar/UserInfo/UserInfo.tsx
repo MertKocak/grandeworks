@@ -3,9 +3,10 @@ import "./UserInfo.css";
 type UserInfoProps = {
     name: string;
     plan: string;
-    avatarUrl?: string; // opsiyonel olarak avatar resmi
+    avatarUrl?: string;
 };
 
+// Sidebar kullanıcı profili
 const UserInfo = ({ name, plan, avatarUrl }: UserInfoProps) => {
     return (
         <div className="user-info">

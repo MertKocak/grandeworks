@@ -6,10 +6,11 @@ interface ContactCardProps {
     level: string;
 }
 
+// sağ panel iletişim kartları
 const ContactCard = ({ name, email, level }: ContactCardProps) => (
     <div className="contact-card">
         <div className='inner-container'>
-            <div className="avatar" />
+            <div className="contact-avatar" />
             <div className='contact-text'>
                 <div className="contact-info">
                     <p className="contact-name">{name}</p>

@@ -4,6 +4,7 @@ interface TestCardProps {
     title: string;
 }
 
+// Sağ panel test kart yapısı
 const TestCard = ({ title }: TestCardProps) => (
     <div className="test-card">
         <p className="test-title">{title}</p>

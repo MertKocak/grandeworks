@@ -10,6 +10,7 @@
     cursor: pointer;
     background: var(--color-darkblue);
     border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hamburger-icon {
@@ -106,6 +107,7 @@
     font-size: 12px;
     color: var(--color-black);
     margin: 0;
+    margin-bottom: 12px;
     font-weight: 600;
     text-decoration: none;
 }
@@ -167,8 +169,9 @@
         height: 100%;
         transform: translateX(-100%);
         width: 360px;
-        background: #c7ddf0;
+        background: var(--color-sidebar-bg);
         z-index: 999;
+        border-right: 1px solid var(--color-border-gray);
     }
 
     .sidebar.open {
@@ -177,5 +180,21 @@
 
     .hamburger {
         display: block;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .dropdown-toggle {
+        font-size: 16px;
+    }
+
+    .logout {
+        font-size: 16px;
+    }
+
+    .dropdown-menu a {
+        font-size: 14px;
     }
 }

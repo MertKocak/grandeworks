@@ -1,0 +1,36 @@
+.chart-container {
+    flex: 1;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 24px;
+}
+
+.chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100px;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.bar {
+    width: 20px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.bar.active {
+    background-color: var(--color-darkblue);
+}
+
+.chart-labels {
+    display: flex;
+    color: var(--color-text-gray);
+    font-weight: 700;
+    justify-content: space-between;
+    font-size: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: -4px;
+}

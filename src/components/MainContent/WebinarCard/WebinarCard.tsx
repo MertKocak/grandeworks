@@ -1,5 +1,6 @@
 import "./WebinarCard.css"
 
+// orta içerik paneli webinar kart yapısı
 const WebinarCard = () => {
     return (
         <section className="upcoming-webinar">

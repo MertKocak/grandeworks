@@ -5,10 +5,8 @@ import BalanceCards from './BalanceCards/BalanceCards';
 import EarningReport from './EarningReport/EarningReport';
 import WebinarCard from './WebinarCard/WebinarCard';
 
-
+// orta içerik paneli
 const MainContent = () => {
-
-
     return (
         <main className="main-content">
             {/* Header */}

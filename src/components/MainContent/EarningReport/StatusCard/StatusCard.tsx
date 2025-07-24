@@ -7,6 +7,7 @@ type StatusCardProps = {
     fill: string;
 };
 
+// earningreport status kart
 const StatusCard = ({ label, value, color, fill }: StatusCardProps) => {
     return (
         <div className={`status`}>

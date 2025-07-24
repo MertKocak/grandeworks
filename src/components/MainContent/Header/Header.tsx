@@ -5,6 +5,7 @@ type HeaderProps = {
     label: string;
 };
 
+// header summary item
 const BalanceSummaryItem = ({ value, label }: HeaderProps) => {
     return (
         <div className="balance-summary-item">
@@ -17,6 +18,7 @@ const BalanceSummaryItem = ({ value, label }: HeaderProps) => {
     );
 };
 
+// orta içerik paneli header 
 const Header = () => {
     const summaryData = [
         { value: 323, label: 'My Balance' },

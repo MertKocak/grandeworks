@@ -7,6 +7,7 @@ const balanceCardsData = [
     { color: "#04bacc", value: 42, title: "On route vehicles", rate: "+18.2%" },
 ];
 
+// orta içerik paneli balance kart yapısı
 const BalanceCards = () => {
     return (
         <section className="balance-cards">

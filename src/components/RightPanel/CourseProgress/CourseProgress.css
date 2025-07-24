@@ -1,5 +1,5 @@
 .course-card {
-    background: #f6f8fd;
+    background: var(--color-avatar-bg);
     border-radius: 32px;
     padding: 16px;
     display: flex;

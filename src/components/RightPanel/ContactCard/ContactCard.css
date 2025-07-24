@@ -16,10 +16,10 @@
     align-items: center;
 }
 
-.avatar {
+.contact-avatar {
     width: 46px;
     height: 46px;
-    background: #f6f8fd;
+    background: var(--color-avatar-bg);
     border-radius: 50%;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .add-button {
-    background: #f6f8fd;
+    background: var(--color-avatar-bg);
     border: none;
     border-radius: 50%;
     width: 28px;

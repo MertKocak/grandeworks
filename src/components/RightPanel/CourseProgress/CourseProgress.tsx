@@ -10,6 +10,7 @@ interface CourseProgressProps {
     percent: number;
 }
 
+// sağ panel kurs ilerleme kart yapısı
 const CourseProgress = ({ title, date, tutor, percent }: CourseProgressProps) => (
     <div className="course-card">
         <div className="course-text">
@@ -22,8 +23,8 @@ const CourseProgress = ({ title, date, tutor, percent }: CourseProgressProps) =>
                 {
                     textColor: "#101010",
                     textSize: "24px",
-                    trailColor: '#e2e5e7ff',
-                    backgroundColor: '#3a61ee',
+                    trailColor: '#e2e5e7',
+                    backgroundColor: '#3a61ee', 
                     pathColor: "#3a61ee"
                 }
             )} className='progress-circle' value={percent} text={`${percent}%`} />

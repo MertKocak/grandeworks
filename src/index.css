@@ -4,13 +4,16 @@
 
   font-family: 'Manrope', sans-serif;
   --color-black: #1b1c1e;
-  --color-text-gray: #8a929b;
+  --color-text-gray: #788089;
   --color-border-gray: #adb8cd;
   --color-purple: #7367ef;
   --color-orange: #fd9f40;
   --color-red: #ff4c56;
   --color-blue: #04bacc;
   --color-darkblue: #3a61ee;
+  --color-bg: #e1ecfd;
+  --color-sidebar-bg: #c7ddf0;
+  --color-avatar-bg: #f6f8fd;
 
   min-height: 100%;
 
